@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00d4ff;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a0a0a0;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+input[type="file"] {
+    padding: 12px;
+    background: #1a2238;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+button {
+    padding: 12px 25px;
+    background: #00d4ff;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00a8cc;
+    transform: scale(1.05);
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #1a2238;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.15);
+}
+
+.card h2 {
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+#sceneText {
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+#objectList {
+    list-style: none;
+}
+
+#objectList li {
+    background: #111827;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #00d4ff;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #333;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .results {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="file"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+.info-box {
+    background: #111827;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #00d4ff;
+}
+
+.info-box h3 {
+    color: #00d4ff;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    margin: 8px 0;
+}

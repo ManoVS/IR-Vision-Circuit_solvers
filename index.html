@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRVision AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>IRVision AI</h1>
+
+        <p class="subtitle">
+            Infrared Image Enhancement, Colorization and Space Object Detection
+        </p>
+
+        <form id="uploadForm">
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+                required>
+
+            <button type="submit">
+                Analyze Image
+            </button>
+
+        </form>
+
+        <div class="results">
+
+            <div class="card">
+
+                <h2>Scene Description</h2>
+
+                <p id="sceneText">
+                    Waiting for image...
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Detected Objects</h2>
+                <div class="card">
+
+                <div class="card">
+
+                <h2>Object Information</h2>
+
+                <div id="objectInfo"></div>
+
+                </div>
+                <ul id="objectList">
+
+                </ul>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Enhanced Image</h2>
+
+                <img
+                    id="enhancedImage"
+                    alt="Enhanced Image">
+
+            </div>
+
+            <div class="card">
+
+                <h2>Colorized Image</h2>
+
+                <img
+                    id="colorizedImage"
+                    alt="Colorized Image">
+
+            </div>
+
+            <div class="card">
+
+                <h2>Heatmap</h2>
+
+                <img
+                    id="heatmapImage"
+                    alt="Heatmap">
+
+            </div>
+
+            <div class="card">
+
+                <h2>Detected Objects Image</h2>
+
+                <img
+                    id="boxedImage"
+                    alt="Detected Objects">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
